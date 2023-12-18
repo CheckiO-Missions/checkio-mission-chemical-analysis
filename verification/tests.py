@@ -24,7 +24,7 @@ TESTS = {
         {
             "input": ['K4[ON(SO3)2]2', 4],
             "answer": ['K', 'O', 'S'],
-        }
+        },
     ],
     "Extra": [
         {
@@ -43,11 +43,9 @@ TESTS = {
             "input": ['Mg3(PO4)2', 2],
             "answer": ['Mg', 'O', 'P'],
         },
-
         {
             "input": ['(CH3COO)2Ca', 4],
             "answer": ['C', 'H', 'O'],
-        }
-
+        },
     ]
 }
