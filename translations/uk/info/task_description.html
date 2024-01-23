@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    У якості вхідних даних вам задано хімічну речовину <code>formula</code> та число <code>limit</code>. Ваша задача полягає у створенні послідовності хімічних елементів, які знаходяться у кількості <code>>= limit</code> у формулі.
+</p>
+
+<p style="text-align: justify;">
+    Зверніть увагу, що у деяких формулах будуть використовуватися дужки <code>(), []</code>. Вони мають різне значення в хімії, але з точки зору підрахунку кількості атомів працюють однаково - як звичайні дужки в математичному виразі. <a target="_blank" href='https://en.wikipedia.org/wiki/Chemical_formula'>This article</a> допоможе вам розкрити дужки і не помилитися при підрахунку.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}chemical-analysis.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Хімічна формула у вигляді рядка <span>(str{% if is_js %}ing{% endif %})</span> та гранична кількість атомів як ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> певних хімічних елементів, відсортованих в алфавітному порядку.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Приклади:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Як використовується:</strong><br>
+    <i>Для хімічного аналізу.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Умова</strong>:<br>
+   <i>1 &lt;= різні елементи &lt;= 10.</i>
+</p>
