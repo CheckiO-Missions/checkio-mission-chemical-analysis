@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    作为输入，您将得到一个化学<code>formula</code> 和一个数字<code>limit</code> 。您的任务是创建一个化学元素序列，其数量为<code>>= limit</code> 。
+</p>
+
+<p style="text-align: justify;">
+    注意，在某些公式中会使用括号<code>(), []</code> 。它们在化学中有着不同的含义，但从计算原子数的角度来看，它们的作用是一样的 - 就像数学表达式中的普通括号一样。<a target="_blank" href='https://en.wikipedia.org/wiki/Chemical_formula'>This article</a> 将帮助您打开括号，在计算时不会出错。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}chemical-analysis.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>以字符串形式输入化学式 <span>(str{% if is_js %}ing{% endif %})</span>和原子的极限数量（整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>按字母顺序排列的某些化学元素的列表。
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>举例说明：</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>如何使用：</strong><br>
+    <i>用于化学分析。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>前提条件</strong>： 1<br>
+   <i>1 &lt;= 不同元素 &lt;= 10。</i>
+</p>
