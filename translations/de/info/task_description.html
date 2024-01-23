@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Als Eingabe erhalten Sie eine chemische <code>formula</code> und eine Zahl <code>limit</code>. Ihre Aufgabe ist es, eine Folge von chemischen Elementen zu erstellen, die in der Menge von <code>>= limit</code> in der Formel enthalten sind.
+</p>
+
+<p style="text-align: justify;">
+    Beachten Sie, dass in einigen Formeln die Klammern <code>(), []</code> verwendet werden. Sie haben in der Chemie eine andere Bedeutung, aber wenn es um die Berechnung der Anzahl der Atome geht, funktionieren beide auf die gleiche Weise - als gewöhnliche Klammern in einem mathematischen Ausdruck. <a target="_blank" href='https://en.wikipedia.org/wiki/Chemical_formula'>This article</a> wird Ihnen helfen, die Klammern zu öffnen und beim Zählen keine Fehler zu machen.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}chemical-analysis.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Chemische Formel als String <span>(str{% if is_js %}ing{% endif %})</span> und die Grenzanzahl der Atome als ganze Zahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von bestimmten chemischen Elementen, sortiert in alphabetischer Reihenfolge.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Beispiele:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Wie es verwendet wird:</strong><br>
+    <i>Für die chemische Analyse.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Vorbedingung</strong>:<br>
+   <i>1 &lt;= verschiedene Elemente &lt;= 10.</i>
+</p>
